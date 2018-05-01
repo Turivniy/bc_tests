@@ -1,0 +1,16 @@
+---
+# This first play always runs on the local staging system
+- hosts: localhost
+  roles:
+  - role: standard-test-basic
+    tags:
+    - classic
+    - container
+    - atomic
+    tests:
+    - sanity.test:
+      dir: sanity
+      run: python runtests.py -v 
+    required_packages:
+    - bc       # Required to run initscript
+    - python-xmlrunner
