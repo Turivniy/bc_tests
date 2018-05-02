@@ -9,8 +9,8 @@
     - atomic
     tests:
     - sanity.test:
-      dir: sanity
-      run: python runtests.py -v 
+        dir: sanity
+        run: python runtests.py -v 
     required_packages:
     - bc       # Required to run initscript
     - python-xmlrunner
