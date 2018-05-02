@@ -13,4 +13,3 @@
         run: python runtests.py -v 
     required_packages:
     - bc       # Required to run initscript
-    - python-xmlrunner
