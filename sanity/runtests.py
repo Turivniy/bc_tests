@@ -5,7 +5,8 @@ import subprocess
 
 
 def call_command(command_to_call):
-    return subprocess.check_output(command_to_call, shell=True)[:-1]
+    result = subprocess.check_output(command_to_call, shell=True)
+    return result[:-1].decode("utf-8") 
 
 
 class TestBC(unittest.TestCase):
