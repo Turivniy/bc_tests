@@ -10,6 +10,6 @@
     tests:
     - sanity.test:
         dir: sanity
-        run: python runtests.py -v 
+        run: python3 runtests.py -v 
     required_packages:
     - bc       # Required to run initscript
